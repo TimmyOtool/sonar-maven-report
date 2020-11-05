@@ -4,9 +4,9 @@
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.codehaus.sonar-plugins</groupId>
-    <artifactId>parent</artifactId>
-    <version>19</version>
+    <groupId>be.etnic.maven</groupId>
+	<artifactId>etnic-parent-pom</artifactId>
+	<version>1.7.8</version>
   </parent>
 
   <groupId>com.github.sonarqube.maven.plugins</groupId>
@@ -30,6 +30,17 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
+
+	<developers>
+		<developer>
+			<id>melimi01</id>
+			<name>michael melin</name>
+			<email>michael.melin@etnic.be</email>
+			<roles>
+				<role>developer</role>
+			</roles>
+		</developer>
+	</developers>
 
   <mailingLists />
 
@@ -85,7 +96,7 @@
     <aetherApiVersion>1.1.0</aetherApiVersion>
     <doxiaVersion>1.8</doxiaVersion>
 
-    <jdkHome>${env.JAVA_HOME}</jdkHome>
+    <!-- <jdkHome>${env.JAVA_HOME}</jdkHome>
     <jvm>${jdkHome}/bin/java</jvm>
     <maven.compiler.executable>${jdkHome}/bin/javac</maven.compiler.executable>
     <maven.compiler.fork>true</maven.compiler.fork>
@@ -95,7 +106,7 @@
     <maven.compiler.showDeprecation>true</maven.compiler.showDeprecation>
     <maven.compiler.showWarnings>true</maven.compiler.showWarnings>
     <maven.compiler.meminitial>128m</maven.compiler.meminitial>
-    <maven.compiler.maxmem>512m</maven.compiler.maxmem>
+    <maven.compiler.maxmem>512m</maven.compiler.maxmem> -->
 
     <maven.source.attach>true</maven.source.attach>
     <maven.source.includePom>true</maven.source.includePom>
